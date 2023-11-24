@@ -47,3 +47,16 @@ make
 ```
 
 Directory: `./producer-consumer`
+
+### Compare-and-Swap
+The previous program was rewritten using CAS. Performs similar actions.
+
+To run the program, enter the following commands:
+```
+cmake .
+./a.out <number of rows> <number of columns> <number of gen & add threads> <number of threads for one matrix> <number of iterations>
+```
+
+Therefore, if N gen & add threads and M iterations are introduced, the result will be N*M matrices (each thread performs M iterations).
+
+Directory: `./compare-and-swap`
