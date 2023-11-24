@@ -48,7 +48,7 @@ make
 
 Directory: `./producer-consumer`
 
-### Compare-and-Swap
+### ➡️ Compare-and-Swap
 The previous program was rewritten using CAS. Performs similar actions.
 
 To run the program, enter the following commands:
