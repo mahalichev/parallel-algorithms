@@ -60,3 +60,23 @@ cmake .
 Therefore, if N gen & add threads and M iterations are introduced, the result will be N*M matrices (each thread performs M iterations).
 
 Directory: `./compare-and-swap`
+
+## ✖️ Matrix multiplication
+This program allows you to compare the speed of performing matrix multiplication using the usual method and the Strassen "fast" multiplication algorithm.
+During the work, it was discovered that matrix multiplication using the Strassen algorithm is faster than parallel multiplication, which becomes especially noticeable for large matrix sizes.
+
+The reason for reducing the multiplication time is to reduce the complexity of performing this operation from $O(n^3)$ to $O(n^{2.81})$.
+
+To run the program, enter the following commands:
+```
+cmake .
+
+// Parallel multiplication
+./a.out d <first matrix rows number> <first matrix columns number> <second matrix columns number> <number of gen & add threads> <number of threads for one matrix> <number of iterations>
+
+// Strassen algorithm (depth - maximum recursion depth)
+./a.out s <first matrix rows number> <first matrix columns number> <second matrix columns number> <depth> <number of gen & add threads> <number of threads for one matrix> <number of iterations>
+```
+
+Directory: `./matrix-multiplication`
+
