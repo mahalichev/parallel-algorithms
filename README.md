@@ -5,7 +5,7 @@ A collection of practical work performed in the process of studying the topic "P
 In this work, the execution time of adding two matrices of size N * M was compared in 3 ways:
 1) One process for each operation: reading, matrix addition, writing the result;
 2) One thread for each operation: reading, matrix addition, writing the result;
-3) One thread for each operation: reading and writing the result. Several threads for matrix addition.
+3) One thread for each operation: reading and writing the result. Multiple threads for matrix addition.
 
 The following conclusions were obtained during the study:
 1) The sizes of the matrices have a great influence on the execution time of the program;
@@ -36,3 +36,14 @@ make threads
 
 Directory: `./matrix-addition`
 
+## 🔄 Producer-consumer problem
+This program solves the producer-consumer problem in the field of matrix addition. 3 buffers are created: a storage of the first matrices, a storage of the second matrices, and a storage of the sum of the first and second matrices.
+Also, as in the previous work, matrix addition is possible using multiple threads.
+
+To run the program, enter the following commands:
+```
+make
+./a.out <number of rows> <number of columns> <number of threads> <number of iterations>
+```
+
+Directory: `./producer-consumer`
