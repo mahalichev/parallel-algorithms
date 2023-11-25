@@ -1,5 +1,5 @@
 # parallel-algorithms
-A collection of practical work performed in the process of studying the topic "Parallel Algorithms"
+A collection of practical works performed in the process of studying the topic "Parallel Algorithms"
 
 ## ➕ Matrix addition
 In this work, the execution time of adding two matrices of size N * M was compared in 3 ways:
