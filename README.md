@@ -80,3 +80,17 @@ cmake .
 
 Directory: `./matrix-multiplication`
 
+## 🎨 Mandelbrot set
+This program implements the calculation of the Mandelbrot fractal in OpenCL, where each execution thread executes the kernel code located in the Mandelbrot.cl file,
+thereby determining the color of the pixel for which this execution thread is responsible.
+When comparing the execution time of calculations on the processor and on the GPU, it was revealed that the program runs much faster on the GPU due to the presence of a larger number of computing cores.
+
+To run the program, enter the following commands:
+```
+cmake .
+./a.out <width> <height> <iterations> <scale> <offset X> <offset Y>
+```
+
+Directory: `./mandelbrot`
+
+![image](https://github.com/mahalichev/parallel-algorithms/assets/54910038/3829b538-a959-43d4-a7f9-fc367d5ff3c2)
